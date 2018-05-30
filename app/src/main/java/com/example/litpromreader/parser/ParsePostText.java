@@ -1,9 +1,7 @@
 package com.example.litpromreader.parser;
 
-import android.app.ProgressDialog;
 import android.graphics.Bitmap;
 import android.os.AsyncTask;
-
 
 import com.example.litpromreader.helpers.ParserHelper;
 import com.example.litpromreader.model.Author;
@@ -13,7 +11,6 @@ import com.example.litpromreader.model.LitpromPostText;
 import com.example.litpromreader.model.LitpromSection;
 import com.example.litpromreader.model.creoContent.CreoContent;
 import com.example.litpromreader.model.creoContent.CreoInfo;
-import com.example.litpromreader.model.creoContent.CreoString;
 
 import org.jsoup.Connection;
 import org.jsoup.Jsoup;
