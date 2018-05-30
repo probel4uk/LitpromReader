@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_pulse"
+
+        android:title="Пульс Литпрома" />
+
+    <item android:id="@+id/nav_new_texts"
+        android:title="Новое" />
+    <!--<item android:id="@+id/nav_important"-->
+        <!--android:title="Важное" />-->
+
+    <item android:id="@+id/nav_sections"
+        android:title="Разделы" />
+    <item android:id="@+id/nav_start_page"
+        android:title="Главная" />
+    <item android:id="@+id/nav_settings"
+        android:title="Настройки" />
+
+</menu>

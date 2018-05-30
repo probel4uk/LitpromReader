@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/autorView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+
+        <TextView
+            android:id="@+id/autorTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="автор"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/creoNameTextVew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Название текста"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/sectionNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Рубрика"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+</LinearLayout>
