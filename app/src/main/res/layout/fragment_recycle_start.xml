@@ -39,7 +39,7 @@
 
         android:gravity="center"
 
-        android:shadowRadius="40dp"
+
         android:textAllCaps="false"
         android:textColor="@android:color/background_light"
         android:textSize="24sp"
