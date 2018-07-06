@@ -2,6 +2,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
+        android:id="@+id/nav_novigator"
+
+        android:title="@string/nav_novigator" />
+
+    <item
         android:id="@+id/nav_pulse"
 
         android:title="@string/pulse_string" />

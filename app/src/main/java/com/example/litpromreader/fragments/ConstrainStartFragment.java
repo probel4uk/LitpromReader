@@ -4,9 +4,11 @@ import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.example.litpromreader.R;
 
@@ -23,6 +25,13 @@ public class ConstrainStartFragment extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+
+    private TextView startPageTextView;
+    private TextView newCreosTextView;
+    private TextView sectionTextView;
+    private TextView pulsuTextView;
+    private TextView settingTextView;
+
 
 
 
@@ -64,10 +73,58 @@ public class ConstrainStartFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        View rootView= inflater.inflate(R.layout.fragment_recycle_start, container, false);
+        startPageTextView = rootView.findViewById(R.id.startPageTextView);
+        newCreosTextView = rootView.findViewById(R.id.newCreosTextView);
+        pulsuTextView = rootView.findViewById(R.id.pulseTextView);
+        settingTextView = rootView.findViewById(R.id.settingTextView);
+        sectionTextView = rootView.findViewById(R.id.sectionNameTextView);
+
+        startPageTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                fragmentManager.beginTransaction().replace(R.id.mainContent, new StartFragment()).commit();
+            }
+        });
+
+        newCreosTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                fragmentManager.beginTransaction().replace(R.id.mainContent, new NewTextFragment()).commit();
+            }
+        });
+
+        sectionTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                fragmentManager.beginTransaction().replace(R.id.mainContent, new SectionFragment()).commit();
+            }
+        });
+
+        settingTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                fragmentManager.beginTransaction().replace(R.id.mainContent, new SettingsFragment()).commit();
+            }
+        });
+
+        pulsuTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                fragmentManager.beginTransaction().replace(R.id.mainContent, new PulseFragment()).commit();
+            }
+        });
 
 
-        return inflater.inflate(R.layout.fragment_recycle_start, container, false);
+        return rootView;
     }
+
+
 
     // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {
@@ -102,4 +159,5 @@ public class ConstrainStartFragment extends Fragment {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
     }
+
 }

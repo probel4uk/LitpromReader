@@ -121,6 +121,7 @@ public class MainActivity extends AppCompatActivity  {
         Fragment myFragment = null;
         Class fragmentClass;
         switch (menuItem.getItemId()){
+
             case R.id.nav_pulse:
                 fragmentClass = PulseFragment.class;
                 break;
@@ -139,8 +140,11 @@ public class MainActivity extends AppCompatActivity  {
             case R.id.nav_settings:
                 fragmentClass = SettingsFragment.class;
                 break;
+            case R.id.nav_novigator:
+                fragmentClass = ConstrainStartFragment.class;
+                break;
             default:
-                fragmentClass = StartFragment.class;
+                fragmentClass = ConstrainStartFragment.class;
         }
         try {
             myFragment = (Fragment) fragmentClass.newInstance();
