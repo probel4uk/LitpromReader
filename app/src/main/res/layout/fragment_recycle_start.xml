@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.litpromreader.fragments.recycleStartFragment">
+    tools:context="com.example.litpromreader.fragments.ConstrainStartFragment">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -37,16 +37,16 @@
         android:layout_marginTop="8dp"
         android:background="@color/colorPrimary"
 
+
         android:gravity="center"
 
 
-        android:textAllCaps="false"
-        android:textColor="@android:color/background_light"
+        android:text="@string/start_page_string"
+        android:textColor="@android:color/white"
         android:textSize="24sp"
         app:layout_constraintEnd_toStartOf="@+id/guideline"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        tools:text="@string/start_page_string" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <TextView
         android:id="@+id/newCreosTextView"
@@ -59,13 +59,13 @@
         android:layout_marginTop="8dp"
         android:background="@color/colorPrimary"
         android:gravity="center"
+        android:text="@string/new_text_string"
         android:textAllCaps="false"
-        android:textColor="@android:color/background_light"
+        android:textColor="@android:color/white"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        tools:text="@string/new_text_string" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <TextView
         android:id="@+id/sectionNameTextView"
@@ -79,13 +79,13 @@
 
         android:background="@color/colorPrimary"
         android:gravity="center"
+        android:text="@string/section_string"
         android:textAllCaps="false"
-        android:textColor="@android:color/background_light"
+        android:textColor="@android:color/white"
         android:textSize="24sp"
         app:layout_constraintEnd_toStartOf="@+id/guideline"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/startPageTextView"
-        tools:text="@string/section_string" />
+        app:layout_constraintTop_toBottomOf="@+id/startPageTextView" />
 
     <TextView
         android:id="@+id/pulseTextView"
@@ -100,13 +100,13 @@
         android:layout_marginTop="8dp"
         android:background="@color/colorPrimary"
         android:gravity="center"
+        android:text="@string/pulse_string"
         android:textAllCaps="false"
-        android:textColor="@android:color/background_light"
+        android:textColor="@android:color/white"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/newCreosTextView"
-        tools:text="@string/pulse_string" />
+        app:layout_constraintTop_toBottomOf="@+id/newCreosTextView" />
 
     <TextView
         android:id="@+id/settingTextView"
@@ -121,13 +121,13 @@
 
         android:background="@color/colorPrimary"
         android:gravity="center"
+        android:text="@string/settings_string"
         android:textAllCaps="false"
-        android:textColor="@android:color/background_light"
+        android:textColor="@android:color/white"
         android:textSize="24sp"
         app:layout_constraintEnd_toStartOf="@+id/guideline"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sectionNameTextView"
-        tools:text="@string/settings_string" />
+        app:layout_constraintTop_toBottomOf="@+id/sectionNameTextView" />
 
     <TextView
         android:id="@+id/forumTextView"
@@ -142,14 +142,14 @@
         android:layout_marginTop="8dp"
         android:background="@color/colorPrimary"
         android:gravity="center"
-        android:textAllCaps="false"
+        android:text="Откровения"
 
-        android:textColor="@android:color/background_light"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/pulseTextView"
-        tools:text="Откровения" />
+        app:layout_constraintTop_toBottomOf="@+id/pulseTextView" />
 
 
 </android.support.constraint.ConstraintLayout>

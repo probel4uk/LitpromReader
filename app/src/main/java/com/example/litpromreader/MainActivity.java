@@ -16,6 +16,7 @@ import android.view.MenuItem;
 import android.view.Window;
 import android.view.WindowManager;
 
+import com.example.litpromreader.fragments.ConstrainStartFragment;
 import com.example.litpromreader.fragments.CreotiveFragment;
 import com.example.litpromreader.fragments.NewTextFragment;
 import com.example.litpromreader.fragments.NewTextFragment2;
@@ -83,8 +84,13 @@ public class MainActivity extends AppCompatActivity  {
             setFragmentInMainContent(newTextFragment2);
 
         }else{
-            StartFragment startFragment = new StartFragment();
+//            StartFragment startFragment = new StartFragment();
+//            setFragmentInMainContent(startFragment);
+
+            ConstrainStartFragment startFragment = new ConstrainStartFragment();
             setFragmentInMainContent(startFragment);
+
+
 
         }
 

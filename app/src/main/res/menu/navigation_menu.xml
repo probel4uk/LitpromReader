@@ -14,7 +14,7 @@
     <item android:id="@+id/nav_sections"
         android:title="@string/section_string" />
     <item android:id="@+id/nav_start_page"
-        android:title="@string/section_string" />
+        android:title="@string/start_page_string" />
     <item android:id="@+id/nav_settings"
         android:title="@string/settings_string" />
 
